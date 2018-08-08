@@ -7,7 +7,7 @@ LABEL description="Ubuntu 17.10 OS + MRtrix3 installation"
 LABEL maintainer="Arnav Pondicherry <arnavpon@rwjms.rutgers.edu>"
 
 # (1) Install MRTrix
-#   - IMPORTANT: use only 1 CPU, but increase Docker RAM usage to 5 GB for MRtrix Installation
+#   - IMPORTANT: use only 1 CPU, but increase Docker RAM usage to 5 GB for installation
 RUN echo "Installing MRtrx3 & its dependencies..." && echo && \
 	apt-get update && apt-get install -y git g++ python python-numpy \
 	libeigen3-dev zlib1g-dev libqt4-opengl-dev libgl1-mesa-dev \ 
