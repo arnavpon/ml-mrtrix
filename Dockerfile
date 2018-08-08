@@ -1,9 +1,9 @@
 # Bhim Pipeline Container 
 # Morey Lab
-# VERSION 0.0.1
+# Automated Build - Step 1
 
 FROM ubuntu:17.10
-LABEL description="This image contains an MRtrix3 installation"
+LABEL description="Ubuntu 17.10 OS + MRtrix3 installation"
 LABEL maintainer="Arnav Pondicherry <arnavpon@rwjms.rutgers.edu>"
 
 # (1) Install MRTrix
@@ -23,5 +23,5 @@ RUN echo "Installing MRtrx3 & its dependencies..." && echo && \
 # (2) Add /mrtrix3/bin to PATH (for tcsh)
 ENV PATH=/mrtrix3/bin:$PATH
 
-# (3) Start up bash
-CMD ["bash"]
+# (3) Start up tcsh
+CMD ["tcsh"]
